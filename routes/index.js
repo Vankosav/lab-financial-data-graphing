@@ -6,7 +6,7 @@ router.get("/", (req, res, next) => {
   res.render("index");
 });
 
-router.get("/financial-data", async (req, res, next) => {
+/*router.get("/financial-data", async (req, res, next) => {
   try {
     const response = await axios.get("http://api.coindesk.com/v1/bpi/historical/close.json");
     console.log(response.data);
@@ -15,5 +15,5 @@ router.get("/financial-data", async (req, res, next) => {
     console.error(error);
   }
 });
-
+*/
 module.exports = router;
