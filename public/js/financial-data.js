@@ -23,7 +23,7 @@ function printTheChart(coinData) {
     console.log('Coin Prices:', coinPrices);
   
     const ctx = document.getElementById('my-chart').getContext('2d');
-    const chart = new Chart(ctx, {
+    new Chart(ctx, {
       type: 'line',
       data: {
         labels: coinDates,
